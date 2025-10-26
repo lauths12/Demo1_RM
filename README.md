@@ -101,11 +101,6 @@ The result is a technically challenging and innovative project that merges **VR 
 ---
 
 ## 👩‍💻 Author
-**Julieth Carretero**  
+**Laura Julieth Carretero Serrano**  
 Mixed Reality Application Development – Universidad de los Andes  
-[GitHub Profile](https://github.com/)
 
----
-
-### 🧠 Keywords
-Unity • C# • Mixed Reality • Virtuix Omni • HTC Vive Pro 2 • VR Interaction • Haptic Feedback • Game Design • AI • Immersive Experience
