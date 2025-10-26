@@ -1,10 +1,11 @@
 # 🕯️ Horror Game – Mixed Reality
 
 ## Overview
-This project consists of the development of an **immersive horror game** set inside the mysterious house of an alchemist.  
-The player must explore the environment in search of **three hidden keys** to complete the experience and escape. However, the task becomes challenging due to the **constant presence of a monster** patrolling the house, generating continuous tension and fear throughout the gameplay.
+This project presents the development of an **immersive horror game** set in the mysterious house of an alchemist.  
+The player’s main objective is to **explore the environment** and find **three hidden keys** to complete the experience and escape.  
+Throughout the game, the player must avoid a **monster** that patrols the house, generating constant tension and fear through realistic interactions and environmental design.
 
-The game was developed as part of the **Mixed Reality Application Development** course at *Universidad de los Andes* and showcased during the **Colivri Lab Open House**.
+The project was developed as part of the **Mixed Reality Application Development** course at *Universidad de los Andes* and was showcased during the **Colivri Lab Open House**.
 
 ---
 
@@ -23,87 +24,86 @@ The game was developed as part of the **Mixed Reality Application Development** 
 ## ⚙️ Hardware Integration
 
 ### HTC Vive Pro 2
-The VR headset was integrated successfully, allowing full detection and tracking from the start of development.
+The VR headset was successfully integrated, providing full motion tracking and interaction capabilities from the beginning of the project.
 
 ### Virtuix Omni
-Integrating the Virtuix Omni presented the main technical challenge, as the available SDK documentation only supported the **Omni One** model.  
-To solve this, support files (SDK, Omni Calibration, and Omni Connection) were obtained from a student who had previously taken the course, enabling full calibration and synchronization.
+The integration of the Virtuix Omni represented the greatest technical challenge, as the available SDKs only supported the **Omni One** model.  
+This issue was solved by obtaining the required SDK, Omni Calibration, and Omni Connection tools, which allowed successful calibration and synchronization of player movement.
 
 ### Movement Synchronization
-Initially, movement was unnatural because the direction depended on waist orientation instead of head tracking. After several adjustments, player movement was synchronized with **gaze direction**, providing a smoother and more natural experience.
+Early versions of the game linked movement to waist orientation, resulting in discomfort.  
+After several adjustments, movement was synchronized with **head tracking**, achieving a much smoother and natural user experience.
 
 ---
 
 ## 🧩 Game Design and Mechanics
 
-The original concept envisioned a **dark hospital** environment, but this was reworked due to motion sickness and limited visibility.  
-The new design focuses on a **stealth-based horror experience** in an alchemist’s laboratory, with improved lighting and optimized navigation.
+The final version of the game focused on creating a **stealth-based horror experience** within an **alchemist’s laboratory**.  
+Players must explore the space, avoid detection, and interact with objects to survive and escape.
 
 ### Gameplay Features
-- Avoid being within the monster’s field of vision for more than 5–10 seconds, or it will begin to chase you.  
-- Hide to escape the monster’s pursuit and reset its search state.  
-- Interact physically with objects using the HTC Vive controllers:
-  - Pick up keys to unlock doors.  
-  - Grab and throw objects to distract the monster.  
-  - Manipulate candles, lights, and furniture in the environment.  
+- Avoid staying in the monster’s field of vision for more than a few seconds, or it will begin to chase you.  
+- Hide or escape to reset the monster’s pursuit behavior.  
+- Use the HTC Vive Pro controllers to:
+  - Pick up keys and unlock doors.  
+  - Grab or throw objects to distract the monster.  
+  - Interact with candles, lights, and furniture for narrative depth.  
 
 ---
 
-## 👾 Monster Design and Future Implementation
+## 👾 Monster and Environment Design
 
-- **Model:** *Book Head Monster* — featuring a book-shaped head with a central eye.  
-- **Animations:** Implemented using **Mixamo**, including patrol, search, and chase cycles.  
-- **Eye Light System:** The monster’s eye emits a flashlight-style beam that defines its detection range.  
-  - If the player stays within the beam for too long, the monster initiates a pursuit.  
-- **Environment Update:** The final scene will include alchemist-style elements — experimental tables, ancient books, mystical jars, and dim lighting to match the game’s narrative.
+The main enemy, the **Book Head Monster**, features a unique design with a book-shaped head and a central glowing eye.  
+The model was animated using **Mixamo**, incorporating patrol, search, and chase behaviors.
+
+A **dynamic light system** was implemented in the monster’s eye to indicate its detection range — if the player stays within this light for too long, the monster begins pursuit.
+
+The environment was designed as an **alchemist’s laboratory**, filled with tables, old books, flasks, and mystical props, all illuminated with dim and atmospheric lighting to reinforce the horror theme.
 
 ---
 
 ## 🧠 Immersion and Realism Test – Qualitative Evaluation
 
 ### Hypothesis
-The hypothesis was that combining the **HTC Vive Pro 2** with the **Virtuix Omni** significantly increases the player’s **immersion and emotional response** compared to a traditional VR experience using only headsets and controllers.  
-The goal was to analyze how integrating physical motion into a horror environment affects fear perception, realism, and immersion levels.
+It was hypothesized that the combination of **HTC Vive Pro 2** and **Virtuix Omni** would significantly increase player immersion and emotional response compared to traditional VR setups using only headsets and controllers.  
+The goal was to evaluate how physical movement integration intensifies fear perception, realism, and overall immersion.
 
 ### Methodology
-The test involved three participants who played the demo using both the HTC Vive Pro 2 and the Virtuix Omni.
+Three participants experienced the demo using the full setup (HTC Vive Pro 2 + Virtuix Omni).
 
 ### Results
 
-- **Participant 1:** Reported higher realism and tension, though noticed a mismatch between walking speed and in-game movement, which slightly reduced immersion.  
-- **Participant 2:** Appreciated the ability to turn naturally, which enhanced presence, but noted a lack of flexibility for crouching or body movements during danger moments.  
-- **Participant 3:** Experienced motion sickness but described a unique sense of vulnerability from moving physically in a hostile environment.
+- **Participant 1:** Found the experience more realistic and tense but noticed a slight mismatch between real walking speed and in-game movement, which briefly broke immersion.  
+- **Participant 2:** Highlighted the natural freedom of movement, especially turning, though missed the ability to crouch, which limited realism during chase moments.  
+- **Participant 3:** Experienced mild motion sickness but described a strong sense of vulnerability and presence due to physical movement in a threatening environment.
 
 ### General Observations
-- The Virtuix Omni increased physical engagement and intensity compared to controller-only experiences.  
-- Physical effort amplified psychological tension during chase sequences.  
-- Immersion was strongly influenced by technical calibration between physical and virtual motion.
-
----
-
-## 🚀 Future Work
-
-- Design and texture the final alchemist-themed environment.  
-- Integrate the Book Head Monster model and animations.  
-- Implement dynamic lighting and AI for patrol and chase states.  
-- Optimize performance to minimize motion sickness and latency.  
-- Enhance synchronization between Virtuix Omni and VR tracking systems.
+- The Virtuix Omni increased physical engagement, making the experience more intense.  
+- Physical effort heightened psychological tension, especially during chase scenes.  
+- The combination of hardware elements substantially enhanced immersion and realism.
 
 ---
 
 ## 🎥 Demonstration Video
-**Final Gameplay Video:** [Watch on YouTube](https://youtu.be/cmCVP-zcK-I)
+
+[![Watch the video](https://img.youtube.com/vi/cmCVP-zcK-I/maxresdefault.jpg)](https://youtu.be/cmCVP-zcK-I)
 
 > ⚠️ **Note:**  
-> The recording was captured directly from the Unity editor.  
-> Due to the game’s high performance requirements, the screen recording shows **delay and reduced frame rate** compared to the actual experience through the **HTC Vive Pro 2**, where movement is smooth and immersive.
+> The video was recorded directly from Unity. Due to the game’s high resource usage, the recording appears **slower and slightly delayed** compared to the actual in-headset experience with the **HTC Vive Pro 2**, where movement is fluid and natural.
+
+---
+
+## 🏁 Conclusion
+The project successfully achieved its objectives of **creating an immersive and realistic mixed reality horror experience**.  
+Through the integration of the **Virtuix Omni** and **HTC Vive Pro 2**, the game demonstrated how combining physical motion with virtual environments can significantly enhance user presence and emotional impact.  
+The result is a technically challenging and innovative project that merges **VR gameplay, physical immersion, and psychological horror** in a cohesive experience.
 
 ---
 
 ## 👩‍💻 Author
 **Julieth Carretero**  
 Mixed Reality Application Development – Universidad de los Andes  
-[GitHub Profile](https://github.com/)  
+[GitHub Profile](https://github.com/)
 
 ---
 
